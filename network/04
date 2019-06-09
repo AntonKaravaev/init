@@ -1,0 +1,2 @@
+route get default | grep gateway | awk '{print $2}'
+(2-й вариант) netstat -nr | grep en0 | grep default | awk '{print $2}'

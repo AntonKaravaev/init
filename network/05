@@ -1,0 +1,2 @@
+nslookup slash16.org | grep Server | awk '{print $2}'
+(2-й метод) dig slash16.org | grep SERVER | cut -c12-23

@@ -1,0 +1,2 @@
+ifconfig en0 | grep "inet" | grep -v "inet6" | awk '{print $2}'
+nslookup   | grep name | awk '{print "Name of my host - " $4}'
